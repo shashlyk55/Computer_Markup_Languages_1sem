@@ -1,0 +1,41 @@
+h2{animation: h 5s linear infinite reverse;}
+@keyframes h{
+    0%{filter: opacity(0%);}
+    100%{filter: opacity(80%);}
+    }
+img{width:60mm;height: 100mm;padding:20px 35px 20px 35px;}
+#scale:hover
+{transform: scale(0.5);}
+#rotate:hover
+{transform: rotate(45deg);}
+#translate:hover
+{transform: translate(50px);}
+#rotateX:hover
+{transform: skew(-20deg)}
+#rotate1{transform: perspective(800px) rotateX(20deg);}
+#rotate2{transform: perspective(800px) rotateY(20deg);}
+#rotate3{transform: perspective(800px) rotateX(20deg);}
+#rotate4{transform: perspective(800px) rotateY(-20deg);}
+input{width: 200px;height: 50px;margin: 10px 20px 10px 20px;}
+#black:hover
+{background: black;color: aliceblue;}
+#red:hover
+{border: 5px solid red;background: whitesmoke;outline: 5px yellow solid;}
+#green:hover
+{border-top:5px green solid;border-bottom:5px green solid;background: white;border-left:white;border-right:white}
+#blue:hover
+{border-top:5px white solid;border-bottom:5px white solid;background: white;border-left:blue 5px solid;border-right:blue 5px solid}
+#gradient:hover
+{background-image: radial-gradient(yellow,rgb(255, 0, 255),skyblue 70%);border:0em}
+
+@keyframes bgchange{
+    0%{background-image: url("D:/языки_разметки/7 лаба/фото/ocean.jpg");}
+    20%{background-image: url("D:/языки_разметки/7 лаба/фото/desert.jpg");}
+    40%{background-image: url("D:/языки_разметки/7 лаба/фото/mountain.jpg");}
+    60%{background-image: url("D:/языки_разметки/7 лаба/фото/forrest.jpg");}
+    80%{background-image: url("D:/языки_разметки/7 лаба/фото/city.jpg");}
+    100%{background-image: url("D:/языки_разметки/7 лаба/фото/ocean.jpg");}
+}
+div{width: 40mm;height: 40mm;animation: bgchange 5s linear infinite;}
+
+

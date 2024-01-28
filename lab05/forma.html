@@ -1,0 +1,51 @@
+<html>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            
+            label
+            {display:block;color:whitesmoke;margin-top:13px;}
+            input
+            {position:absolute;left:68mm;background: rgba(255,255,255,.5);
+            color:rgba(255,255,255,1);box-shadow: inset 0 0 10px rgba(255,255,255, .75);font-size:1.2em;}
+            input:focus:not([type="email"])
+            {background: black;color:whitesmoke}
+            input[type="checkbox"]
+            {position:absolute;left:68mm;top:4.735cm}
+            select
+            {position:absolute;left:68mm;background: rgba(255,255,255,.5);
+            color:indigo;box-shadow: inset 0 0 10px rgba(255,255,255, .75);font-size:1.2em;}
+            input[type="submit"]
+            {position:absolute;left:50mm;background:navy;box-shadow:0 0 4px white;font-size:1.2em;}
+            input[type="reset"]
+            {position:absolute;left:85mm;font-size:1.2em;background:navy;box-shadow:0 0 4px white}
+        </style>
+    </head>
+    <body>
+        <form style="background:indigo;padding-bottom: 10mm;padding-left: 8px;width:500px">
+        <h3 style="color:whitesmoke">Регистрация постоянного клиента</h3>
+        <label>Фамилия<input type="text"></label>
+        <label>Имя<input type="text"></label>
+        <label>Отчество<input type="text"></label>
+        <label>Ваш возpаст<input type="text"></label>
+        <label>Пол </label><input type="checkbox"><label style="position:absolute;left:7.4cm;top:4.4cm">мужской</label><input type="checkbox" style="position:absolute;left:9.45cm"><label style="position:absolute;left:10cm;top:4.4cm">женский</label></label>
+        <label>Email<input type="email"></label>
+        <label>Страна проживания<input type="text"></label>
+        <label>Откуда вы узнали о нас?<select name="как узнали о нас">
+            <option>Выберите из списка</option>
+            <option>от друзей или знакомых</option>
+            <option>увидели рекламу</option>
+            <option>случайно наткнулся</option>
+        </select></label>
+        <label>Дата заполнения <input type="date"></label>
+        <label><input type="submit" value="Регистрация"></label>
+        <label><input type="reset" value="Отмена" style="position:absolute;left:87mm"></label>
+        </form>
+    </body>
+    </html>
+</html>

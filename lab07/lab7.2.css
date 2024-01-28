@@ -1,0 +1,33 @@
+h2{animation: h 5s linear infinite reverse;}
+@keyframes h{
+    0%{filter: opacity(0%);}
+    100%{filter: opacity(80%);}
+    }
+img{position: absolute;width:60mm;height: 100mm;}
+#a{animation: photo1 5s linear infinite;}
+#b{animation: photo2 5s linear infinite;}
+#c{animation: photo3 5s linear infinite;}
+#d{animation: photo4 5s linear infinite;}
+@keyframes photo1{   
+    0%{transform:translate(0) perspective(800px) rotateY(20deg);}
+    50%{}
+    100%{transform:translate(0)}
+    }
+@keyframes photo2{
+    0%{margin-left:50px;transform:translate(0) perspective(800px) rotateY(20deg);}
+    50%{margin-left:50px;transform: none;}
+    75%{transform:translate(300px)}
+    100%{filter: blur(10px);}
+    }
+@keyframes photo3{
+    0%{margin-left:100px;transform:translate(0) perspective(800px) rotateY(20deg);}
+    50%{margin-left:100px;transform: none;}
+    75%{transform:translate(600px);filter:grayscale(1)}
+    100%{filter:grayscale(1);}
+    }
+@keyframes photo4{
+    0%{margin-left:150px;transform:translate(0) perspective(800px) rotateY(20deg);}
+    50%{margin-left:150px;transform: none;}
+    75%{transform:translate(900px)}
+    100%{filter: invert(1);}
+    }

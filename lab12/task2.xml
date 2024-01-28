@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="style.css"?>
+<!DOCTYPE books [
+    <!ELEMENT books (head, book)>
+    <!ELEMENT book (author, title)>
+    <!ELEMENT head (nauthor, ntitle)>
+    <!ELEMENT author (#PCDATA)>
+    <!ELEMENT title (#PCDATA)>
+    <!ELEMENT nauthor (#PCDATA)>
+    <!ELEMENT ntitle (#PCDATA)>
+    <!ENTITY pushk "Пушкин">
+]>
+<books>
+    <head>
+        <nauthor>Писатель</nauthor>
+        <ntitle>Год рождения</ntitle>
+    </head>
+    <book>
+        <author>&pushk;</author>
+        <title>1799</title>
+    </book>
+    <book>
+        <author>Лермонтов</author>
+        <title>1814</title>
+    </book>
+    <book>
+        <author>Толстой</author>
+        <title>1828</title>
+    </book>
+    <book>
+        <author>Гоголь</author>
+        <title>1809</title>
+    </book>
+</books>

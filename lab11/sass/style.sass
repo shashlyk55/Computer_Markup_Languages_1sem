@@ -1,0 +1,98 @@
+$disp: inline-block
+$size-p: 16px
+
+%text
+    text-align: center
+
+
+@mixin border
+    border:1px black solid
+
+@function size-header($size-p) 
+    @return $size-p + 6px
+
+@function paragraph-color($size-p)
+    @if ($size-p > 14px)
+        @return #514ED8
+    @else
+        @return #340470
+
+.grid
+    display: grid
+    grid-gap: 5px
+    grid-template-columns:2fr 1fr
+    grid-template-rows:1fr 10fr 1fr
+    grid-template-areas: "head head" "div1 div2" "foot foot"
+
+ul
+    float: right
+    margin-top: 17px
+    li
+        @include border
+        display: $disp
+        list-style-type: none
+        border: 1px black solid
+        margin: 0 50px 0 50px
+        width: 150px
+        height: 25px
+        text-align: center
+        padding-top: 5px
+
+div[style="grid-area:head"]
+    @include border
+    img
+        @include border
+        height: 55px
+        width: 55px
+        margin: 6px 0 6px 30px
+
+div[style="grid-area:foot"]
+    @include border
+
+h2,h3,h4,h5
+    @extend %text
+    font-size: size-header($size-p)
+    color: paragraph-color($size-paragraph)
+
+div[style="grid-area:div2"]
+    font-size:size-header($size-p)
+    div
+        padding: 20px
+        @include border
+    img
+        width: 170px
+        height: 170px
+        @include border
+    p
+        font-size: $size-p
+        width: 200px
+        position: relative
+        bottom: 150px
+        left: 30px
+        @include border
+        margin: 0 20px 0 22px
+        display: inline-block
+    form
+        @include border
+        height: 30%
+        padding-left: 30px
+        label 
+            display: block
+            margin-bottom: 20px
+
+div[style="grid-area:div1"]
+    img
+        width: 250px
+        height: 250px
+        margin: 0 25px 0 25px
+        @include border
+    p 
+        @include border
+        display: $disp
+        position:relative
+        width: 29.5%
+        height: 300px
+        margin: 0 12px 0 12px
+        padding:5px
+        box-sizinhg:border-box
+        

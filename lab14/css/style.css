@@ -1,0 +1,76 @@
+h1, h2, h3, h4, h5, h6 {
+  color: purple;
+  font-family: "Monotype Corsiva";
+  text-align: center;
+}
+
+#li1 {
+  list-style-type: disc;
+}
+
+#li2 {
+  list-style-type: circle;
+}
+
+#li3 {
+  list-style-type: square;
+}
+
+p {
+  color: blue;
+  font-family: arial;
+  font-size: 16px;
+}
+
+svg {
+  width: 100%;
+}
+
+circle {
+  cursor: pointer;
+}
+
+#span1 {
+  color: aqua;
+}
+
+#span2 {
+  color: blueviolet;
+}
+
+#span3 {
+  color: brown;
+}
+
+body {
+  background-color: rgb(192, 228, 192);
+}
+body p {
+  color: black;
+}
+body ul[id=li1] li {
+  color: red;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18pt;
+}
+body ul[id=li2] li {
+  color: yellow;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20pt;
+}
+body ul[id=li3] li {
+  color: green;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 22pt;
+}
+body table {
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+body table th {
+  -moz-column-span: 5;
+       column-span: 5;
+}
+body table td {
+  border: 2px solid black;
+}

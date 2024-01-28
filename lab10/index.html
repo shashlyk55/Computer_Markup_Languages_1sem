@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/css/style.css" media="all">
+    <link href="" rel="stylesheet" media="(max-width: 1280px) and (min-width: 768px)">
+    <style>
+        @import url(css/css/media.css) (min-width:768px) and (max-width:1024px);
+        @media(max-width:480px){
+            figcaption{color:red}
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <ul class="main">
+            <li id="fixli">
+                <span>Меню</span>
+                <input type="checkbox" id="burger">
+                <label for="burger" id="burger"></label>
+                <ul>
+                    <li><a href="#video">Видео</a></li>
+                    <li><a href="#audio">Аудио</a></li>
+                    <li><a href="#gallery">Галерея</a></li>
+                </ul>
+            </li>
+            <li><a href="#video">Видео</a></li>
+            <li><a href="#audio">Аудио</a></li>
+            <li><a href="#gallery">Галерея</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <div class="zagolovok"><h2>Flexbox-верстка</h2></div>
+        <div class="flex1" id="video">
+            <h2>Nirvana - Smells Like Teen Spirit</h2>
+            <video controls>
+                <source src="materials/Nirvana - Smells Like Teen Spirit (Official Music Video).mp4">
+            </video>
+            <h2>New Divide - Linkin Park</h2>
+            <video controls>
+                <source src="materials/New Divide [Official Music Video] - Linkin Park.mp4">
+            </video>
+            <h2>Dr. Dre - Still D.R.E. ft. Snoop Dogg</h2>
+            <video controls>
+                <source src="materials/Dr. Dre - Still D.R.E. (Official Music Video) ft. Snoop Dogg.mp4">
+            </video>
+        </div>
+        <div class="flex2">
+            CSS Flexbox предназначен для создания гибких макетов. С помощью этой технологии можно очень просто и гибко расставить элементы в контейнере, распределить доступное пространство между ними, и выровнять их тем или иным способом даже если они не имеют конкретных размеров.CSS Flexbox позволяет создать адаптивный дизайн намного проще, чем с использованием Float и позиционирования.Flexbox можно использовать как для CSS разметки целой страницы, так и её отдельных блоков.CSS Flexbox поддерживается всеми используемые на сегодняшний момент современными браузерами (с использованием префиксов: IE10+, Edge12+, Firefox 2+, Chrome 4+, Safari 3.1+, Opera 12.1+, iOS Safari 3.2, Opera mini, Android 2.1+, Blackberry 7+).
+        </div>
+        <div class="flex1" id="audio">
+            <h2>Offspring - Kids Aren't Allright</h2>
+            <audio controls>
+                <source src="materials/the_offspring_1998_americana_-_The_Kids_arent_Allright_63826949.mp3">
+            </audio>
+            <h2>Eminem - Lose Yourself</h2>
+            <audio controls>
+                <source src="materials/Eminem_-_Lose_Yourself_47829428.mp3">
+            </audio>
+            <h2>Linkin Park - Numb</h2>
+            <audio controls>
+                <source src="materials/Linkin_Park_-_Numb_47828673.mp3">
+            </audio>
+        </div>
+    </div>
+  
+    <div class="container gallery">
+        <figure>
+            <img src="materials/puppy1.jpg" alt="" id="gallery">
+            <figcaption>щенок</figcaption>
+        </figure>
+        <figure>
+            <img src="materials/puppy2.jpg" alt="">
+            <figcaption>и это щенок</figcaption>
+        </figure>
+        <figure>
+            <img src="materials/puppy3.jpg" alt="">
+            <figcaption>и это тоже щенок</figcaption>
+        </figure>
+        <figure>
+            <img src="materials/puppy4.jpg" alt="">
+            <figcaption>еще щенок</figcaption>
+        </figure>
+        <figure>
+            <img src="materials/puppy5.jpg" alt="">
+            <figcaption>и еще это щенок</figcaption>
+        </figure>
+        <figure>
+            <img src="materials/puppy6.jpg" alt="">
+            <figcaption>еще один щенок</figcaption>
+        </figure>
+        <figure>
+            <img src="materials/puppy7.jpg" alt="">
+            <figcaption>вот еще щенок</figcaption>
+        </figure>
+        <figure>
+            <img src="materials/puppy8.jpg" alt="">
+            <figcaption>и еще щенок</figcaption>
+        </figure>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<html>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            ul>li{display: inline-block;width: 45mm;border: 1px black ridge;text-align: center;padding:7px 0 7px 0;margin-right: 20px;}
+            ol{display:none;}
+            ol>li{position: relative;}
+            ul>li:hover>ol{display: block;position: absolute;}
+            ol{top:11mm;}
+            ol>li{border:black 1px ridge;width: 45mm;padding:7px 0 7px 0;right:10.8mm;list-style: none;}
+            #fit:hover{background-position:  0 -30px;}
+            ul>li{background: url(D:/языки_разметки/6лаба/bstu/facultet.png) no-repeat;}
+            #pim:hover{background-position: 0 -90px;}
+            #htit:hover{background-position: 0 -60px;}
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li><a href="https://www.belstu.by/">БГТУ</a></li>
+            <li id="fit">ИТ
+                <ol>
+                    <li>Кафедра ИСиТ</li>
+                    <li>Кафедра ИиВД</li>
+                    <li>Кафедра ПИ</li>
+                </ol>
+            </li>
+            <li id="pim">ПиМ</li>
+            <li id="htit">ХТиТ</li>
+        </ul>
+    </body>
+    </html>
+</html>

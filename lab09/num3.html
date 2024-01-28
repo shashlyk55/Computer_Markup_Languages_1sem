@@ -1,0 +1,30 @@
+<html>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            #grid{display:grid;grid-gap: 10px;grid-template-areas: "nav head head"
+                                                                  "nav article aside"
+                                                                  "footer footer footer";
+            grid-template-columns: 200px 1200px 400px;grid-template-rows: 200px 600px 100px;}
+            div>div{border: 1px black ridge;background: greenyellow;}
+        </style>
+    </head>
+    <body>
+        <div id="grid">
+            <div style="grid-area: nav;"></div>
+            <div style="grid-area: nav;"></div>
+            <div style="grid-area: head;"></div>
+            <div style="grid-area: article;"></div>
+            <div style="grid-area: aside;"></div>
+            <div style="grid-area: footer;"></div>
+            <div style="grid-area: footer;"></div>
+            <div style="grid-area: footer;"></div>
+        </div>
+    </body>
+    </html>
+</html>
